@@ -18,9 +18,9 @@ const users = [
 const siteConfig = {
   title: 'Test Site' /* title for your website */,
   tagline: 'A website for testing',
-  url: 'https://facebook.github.io' /* your website url */,
-  baseUrl: '/test-site/' /* base url for your project */,
-  projectName: 'test-site',
+  url: 'https://j-f1.github.io' /* your website url */,
+  baseUrl: '/docusaurus-ga-demo/' /* base url for your project */,
+  // projectName: 'test-site',
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
     {doc: 'doc4', label: 'API'},
@@ -42,15 +42,18 @@ const siteConfig = {
     'Copyright © ' +
     new Date().getFullYear() +
     ' Your Name or Your Company Name',
-  // organizationName: 'deltice', // or set an env variable ORGANIZATION_NAME
-  // projectName: 'test-site', // or set an env variable PROJECT_NAME
+  organizationName: 'j-f1', // or set an env variable ORGANIZATION_NAME
+  projectName: 'docusaurus-ga-demo', // or set an env variable PROJECT_NAME
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
     theme: 'default',
   },
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: ['https://buttons.github.io/buttons.js', 'js/demo.js'],
   // You may provide arbitrary config keys to be used as needed by your template.
   repoUrl: 'https://github.com/facebook/test-site',
+  gaTrackingId: 'UA-44373548-31', // from docusaurus.io
+  // Option I'm requesting
+  analytics: 'gtag',
 };
 
 module.exports = siteConfig;
